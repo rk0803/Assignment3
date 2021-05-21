@@ -6,7 +6,7 @@ In this, I have tried two different architectures, and are available in Assignme
 ## Model 1
 ![image](https://user-images.githubusercontent.com/82941475/119137853-e36a0380-ba5e-11eb-85f7-76180683f72a.png)
 ## Model 2
-![image](https://user-images.githubusercontent.com/82941475/119109279-ab52c880-ba3e-11eb-82fa-43de2a2c47d6.png)
+![image](https://user-images.githubusercontent.com/82941475/119137983-02689580-ba5f-11eb-920e-1d41354c3432.png)
 There are few architectural details which are different in these two models and will be highlighted later.
 #### Data Representation
 The image of data taken from MNIST dataset is in 1X28X28. The random digit is converted to one-hot vector of size 10. Data is taken in batch size of 100. 
