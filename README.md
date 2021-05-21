@@ -4,7 +4,9 @@ Design a neural network that can take 2 inputs:an image from MNIST dataset, and 
 In this, I have tried two different architectures, and are available in Assignment3.1.ipynb and Assignment3.2.ipynb. Shown below are their architectures :
 
 ## Model 1
+![image](https://user-images.githubusercontent.com/82941475/119097694-ae47bc00-ba32-11eb-95d8-18c21c4aedc2.png)
 ## Model 2
+
 ### Model1 Details:
 ##### Architecture 
 Here I have two convolutional layers with 5 X 5 kernel size and maxpool2d. After that I flatten out the features to 192 (12X4X4) and 
