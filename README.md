@@ -41,21 +41,22 @@ concatenate the one-hot vector of the random digit which is the second input. So
 I take the top 10 bits as the  digit recognized from image, and bottom 18 bits as the sum of this image digit and random digit.
 <p>Net(</p>
  <p> (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))</p>
-  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
-  (fc1): Linear(in_features=202, out_features=120, bias=True)
-  (fc2): Linear(in_features=120, out_features=84, bias=True)
-  (out): Linear(in_features=84, out_features=28, bias=True)
-)
+  <p>  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1)) </p>
+  <p>  (fc1): Linear(in_features=202, out_features=120, bias=True) </p>
+  <p>  (fc2): Linear(in_features=120, out_features=84, bias=True) </p>
+  <p>  (out): Linear(in_features=84, out_features=28, bias=True)</p>
+<p>)</p>
+
 ### Model 2 Architecture details:
 Here I have two convolutional layers with 5 X 5 kernel size and maxpool2d. After that I flatten out the features to 192 (12X4X4) and pass it through full connected layers (120,60) and (60,10). This ouput of size 10 goes on become an output of Net and also concatenated with one-hot vector of the random digit which is the second input, becomes input further to next set fully connected layers (20, 100), (100, 60) and (60,18). This output of size 18 becomes the second ouput, one-hot vector representation of sum of two digits.
-*Net(
-  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
-  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
-  (fc1): Linear(in_features=192, out_features=120, bias=True)
-  (fc2): Linear(in_features=120, out_features=60, bias=True)
-  (fc3): Linear(in_features=60, out_features=10, bias=True)
-  (fc4): Linear(in_features=20, out_features=100, bias=True)
-  (fc5): Linear(in_features=100, out_features=60, bias=True)
-  (out): Linear(in_features=60, out_features=18, bias=True)
-)*
+ <p> Net(
+ <p>   (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1)) </p>
+ <p> (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))</p>
+  <p>  (fc1): Linear(in_features=192, out_features=120, bias=True)</p>
+  <p> (fc2): Linear(in_features=120, out_features=60, bias=True)</p>
+  <p> (fc3): Linear(in_features=60, out_features=10, bias=True)</p>
+   <p> (fc4): Linear(in_features=20, out_features=100, bias=True)</p>
+   <p> (fc5): Linear(in_features=100, out_features=60, bias=True)</p>
+   <p> (out): Linear(in_features=60, out_features=18, bias=True)</p>
+)
 
