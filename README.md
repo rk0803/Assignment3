@@ -4,7 +4,7 @@ Design a neural network that can take 2 inputs:an image from MNIST dataset, and 
 In this, I have tried two different architectures, and are available in Assignment3.1.ipynb and Assignment3.2.ipynb respectively. Shown below are their architectures :
 
 ## Model 1
-![image](https://user-images.githubusercontent.com/82941475/119097694-ae47bc00-ba32-11eb-95d8-18c21c4aedc2.png)
+![image](https://user-images.githubusercontent.com/82941475/119137853-e36a0380-ba5e-11eb-85f7-76180683f72a.png)
 ## Model 2
 ![image](https://user-images.githubusercontent.com/82941475/119109279-ab52c880-ba3e-11eb-82fa-43de2a2c47d6.png)
 There are few architectural details which are different in these two models and will be highlighted later.
